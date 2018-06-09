@@ -1,13 +1,16 @@
 <center><h1><font color="green" face ="verdana"><u> this is the music library</u></font> </h1></center>
-<font color="red" face ="verdana"><h2><marquee>welcome to my library</marquee></h2></font>
+<font color="red" face ="verdana"><center><h2>  <marquee direction = "left" hspace = "40%" vspace = "1%">welcome to my library</marquee></h2></center></font>
 {% if all_albums %}
 	<font color = "red" size="6">
 	<ol>
 		{% for album in all_albums %}
 		<li> <a href = "/music/{{ album.id}}/"> {{ album.album_title}} </a> </li>
 		{% endfor %}
+		
 	</ol>
 	</font>
+	<iframe width="480" height="300" src="https://www.youtube.com/embed/wDuqObGbLnI?list=PL6gx4Cwl9DGBlmzzFcLgDhKTTfNLfX1IK" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		
 {% else %}
 	<h3> u dont have any albums </h3>
 	
